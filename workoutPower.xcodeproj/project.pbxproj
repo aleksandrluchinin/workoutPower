@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		1F50538B29435636005848A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50538A29435636005848A8 /* AppDelegate.swift */; };
 		1F50538D29435636005848A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50538C29435636005848A8 /* SceneDelegate.swift */; };
-		1F50538F29435636005848A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50538E29435636005848A8 /* ViewController.swift */; };
+		1F50538F29435636005848A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50538E29435636005848A8 /* MainViewController.swift */; };
 		1F50539429435638005848A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F50539329435638005848A8 /* Assets.xcassets */; };
 		1F50539729435638005848A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50539529435638005848A8 /* LaunchScreen.storyboard */; };
+		1F5053A429437252005848A8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5053A329437252005848A8 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F50538729435636005848A8 /* workoutPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workoutPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F50538A29435636005848A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F50538C29435636005848A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F50538E29435636005848A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F50538E29435636005848A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1F50539329435638005848A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F50539629435638005848A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F50539829435638005848A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5053A329437252005848A8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		1F50538929435636005848A8 /* workoutPower */ = {
 			isa = PBXGroup;
 			children = (
-				1F50538A29435636005848A8 /* AppDelegate.swift */,
-				1F50538C29435636005848A8 /* SceneDelegate.swift */,
-				1F50538E29435636005848A8 /* ViewController.swift */,
-				1F50539329435638005848A8 /* Assets.xcassets */,
-				1F50539529435638005848A8 /* LaunchScreen.storyboard */,
+				1F50539E294363AE005848A8 /* Application */,
+				1F50539F294363C3005848A8 /* MainModule */,
+				1F5053A0294363E8005848A8 /* Resourse */,
 				1F50539829435638005848A8 /* Info.plist */,
 			);
 			path = workoutPower;
+			sourceTree = "<group>";
+		};
+		1F50539E294363AE005848A8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1F50538A29435636005848A8 /* AppDelegate.swift */,
+				1F50538C29435636005848A8 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1F50539F294363C3005848A8 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				1F5053A229436434005848A8 /* Controllers */,
+				1F5053A129436429005848A8 /* Views */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		1F5053A0294363E8005848A8 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				1F50539329435638005848A8 /* Assets.xcassets */,
+				1F50539529435638005848A8 /* LaunchScreen.storyboard */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		1F5053A129436429005848A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F5053A329437252005848A8 /* CalendarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F5053A229436434005848A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F50538E29435636005848A8 /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F50538F29435636005848A8 /* ViewController.swift in Sources */,
+				1F50538F29435636005848A8 /* MainViewController.swift in Sources */,
 				1F50538B29435636005848A8 /* AppDelegate.swift in Sources */,
+				1F5053A429437252005848A8 /* CalendarView.swift in Sources */,
 				1F50538D29435636005848A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
