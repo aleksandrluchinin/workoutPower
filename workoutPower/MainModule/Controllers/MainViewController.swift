@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     
     private lazy var addWorkoutButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+        button.backgroundColor = #colorLiteral(red: 0.8446564078, green: 0.5145705342, blue: 1, alpha: 1)
         button.layer.borderColor = UIColor.white.cgColor
         button.layer.borderWidth = 4
         button.layer.cornerRadius = 10
