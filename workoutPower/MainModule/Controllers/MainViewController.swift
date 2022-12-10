@@ -52,6 +52,8 @@ class MainViewController: UIViewController {
     
     private let calendarView = CalendarView()
     
+    private let weatherView = WeatherView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,7 +67,9 @@ class MainViewController: UIViewController {
         view.addSubview(calendarView)
         view.addSubview(userPhotoImage)
         view.addSubview(userNameLabel)
+        view.addSubview(weatherView)
         view.addSubview(addWorkoutButton)
+      
     }
     
     @objc private func addWorkoutButtonTapped() {
@@ -94,7 +98,13 @@ extension MainViewController {
             addWorkoutButton.topAnchor.constraint(equalTo: calendarView.bottomAnchor, constant: 5),
             addWorkoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             addWorkoutButton.widthAnchor.constraint(equalToConstant: 80),
-            addWorkoutButton.heightAnchor.constraint(equalToConstant: 80)
+            addWorkoutButton.heightAnchor.constraint(equalToConstant: 80),
+            
+            weatherView.topAnchor.constraint(equalTo: calendarView.bottomAnchor, constant: 5),
+            weatherView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 95),
+           weatherView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            weatherView.heightAnchor.constraint(equalToConstant: 80)
+           
         ])
     }
 }

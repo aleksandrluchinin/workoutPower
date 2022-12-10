@@ -13,6 +13,11 @@
 		1F50539429435638005848A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F50539329435638005848A8 /* Assets.xcassets */; };
 		1F50539729435638005848A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50539529435638005848A8 /* LaunchScreen.storyboard */; };
 		1F5053A429437252005848A8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5053A329437252005848A8 /* CalendarView.swift */; };
+		1FACBA39294472A300AF663A /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA38294472A300AF663A /* WeatherView.swift */; };
+		1FACBA402944824F00AF663A /* UIColor .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA3F2944824F00AF663A /* UIColor .swift */; };
+		1FACBA422944829900AF663A /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA412944829900AF663A /* UIFont.swift */; };
+		1FACBA44294482EA00AF663A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA43294482EA00AF663A /* UIView.swift */; };
+		1FACBA462944834200AF663A /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA452944834200AF663A /* UIStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		1F50539629435638005848A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F50539829435638005848A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5053A329437252005848A8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1FACBA38294472A300AF663A /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		1FACBA3B2944814700AF663A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Обучение приложение workout/Lesson_2/MyFirstApp_03.10./MyFirstApp_03.10./Resources/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		1FACBA3C2944814700AF663A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Обучение приложение workout/Lesson_2/MyFirstApp_03.10./MyFirstApp_03.10./Resources/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		1FACBA3F2944824F00AF663A /* UIColor .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor .swift"; sourceTree = "<group>"; };
+		1FACBA412944829900AF663A /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		1FACBA43294482EA00AF663A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		1FACBA452944834200AF663A /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				1F50539E294363AE005848A8 /* Application */,
+				1FACBA3D2944821100AF663A /* Extension */,
 				1F50539F294363C3005848A8 /* MainModule */,
 				1F5053A0294363E8005848A8 /* Resourse */,
 				1F50539829435638005848A8 /* Info.plist */,
@@ -85,6 +98,7 @@
 		1F5053A0294363E8005848A8 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
+				1FACBA3A2944813300AF663A /* Fonts */,
 				1F50539329435638005848A8 /* Assets.xcassets */,
 				1F50539529435638005848A8 /* LaunchScreen.storyboard */,
 			);
@@ -95,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				1F5053A329437252005848A8 /* CalendarView.swift */,
+				1FACBA38294472A300AF663A /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +120,34 @@
 				1F50538E29435636005848A8 /* MainViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1FACBA3A2944813300AF663A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1FACBA3C2944814700AF663A /* Roboto-Bold.ttf */,
+				1FACBA3B2944814700AF663A /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1FACBA3D2944821100AF663A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1FACBA3E2944822A00AF663A /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1FACBA3E2944822A00AF663A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1FACBA3F2944824F00AF663A /* UIColor .swift */,
+				1FACBA412944829900AF663A /* UIFont.swift */,
+				1FACBA43294482EA00AF663A /* UIView.swift */,
+				1FACBA452944834200AF663A /* UIStackView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FACBA44294482EA00AF663A /* UIView.swift in Sources */,
+				1FACBA462944834200AF663A /* UIStackView.swift in Sources */,
+				1FACBA39294472A300AF663A /* WeatherView.swift in Sources */,
 				1F50538F29435636005848A8 /* MainViewController.swift in Sources */,
+				1FACBA402944824F00AF663A /* UIColor .swift in Sources */,
+				1FACBA422944829900AF663A /* UIFont.swift in Sources */,
 				1F50538B29435636005848A8 /* AppDelegate.swift in Sources */,
 				1F5053A429437252005848A8 /* CalendarView.swift in Sources */,
 				1F50538D29435636005848A8 /* SceneDelegate.swift in Sources */,
