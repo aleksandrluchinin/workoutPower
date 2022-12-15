@@ -19,14 +19,13 @@ class CalendarView: UIView {
     }()
     
     private let idCalendarCell = "idCalendarCell"
-    
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupViews()
         setConstraints()
         setDelegates()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -82,7 +81,7 @@ extension CalendarView: UICollectionViewDelegate {
 extension CalendarView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width / 8, height: collectionView.frame.height)
+        CGSize(width: collectionView.frame.width / 6.5, height: collectionView.frame.height)
     }
 }
     

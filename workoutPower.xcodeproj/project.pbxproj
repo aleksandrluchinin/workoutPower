@@ -19,6 +19,8 @@
 		1FACBA44294482EA00AF663A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA43294482EA00AF663A /* UIView.swift */; };
 		1FACBA462944834200AF663A /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA452944834200AF663A /* UIStackView.swift */; };
 		1FACBA492944ABA500AF663A /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA482944ABA500AF663A /* CalendarCollectionViewCell.swift */; };
+		1FD8D989294B132900A6332A /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8D988294B132900A6332A /* MainTableView.swift */; };
+		1FD8D98B294B1A1A00A6332A /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8D98A294B1A1A00A6332A /* WorkoutTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1FACBA43294482EA00AF663A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1FACBA452944834200AF663A /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		1FACBA482944ABA500AF663A /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		1FD8D988294B132900A6332A /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		1FD8D98A294B1A1A00A6332A /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +114,10 @@
 		1F5053A129436429005848A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1FACBA472944AB7600AF663A /* Cell */,
 				1F5053A329437252005848A8 /* CalendarView.swift */,
 				1FACBA38294472A300AF663A /* WeatherView.swift */,
+				1FD8D988294B132900A6332A /* MainTableView.swift */,
+				1FACBA472944AB7600AF663A /* Cell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				1FACBA482944ABA500AF663A /* CalendarCollectionViewCell.swift */,
+				1FD8D98A294B1A1A00A6332A /* WorkoutTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -238,9 +244,11 @@
 				1FACBA492944ABA500AF663A /* CalendarCollectionViewCell.swift in Sources */,
 				1FACBA402944824F00AF663A /* UIColor .swift in Sources */,
 				1FACBA422944829900AF663A /* UIFont.swift in Sources */,
+				1FD8D98B294B1A1A00A6332A /* WorkoutTableViewCell.swift in Sources */,
 				1F50538B29435636005848A8 /* AppDelegate.swift in Sources */,
 				1F5053A429437252005848A8 /* CalendarView.swift in Sources */,
 				1F50538D29435636005848A8 /* SceneDelegate.swift in Sources */,
+				1FD8D989294B132900A6332A /* MainTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

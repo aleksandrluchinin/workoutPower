@@ -50,10 +50,21 @@ class MainViewController: UIViewController {
         return button
     }()
     
+    private let workoutTodayLabel: UILabel = {
+       let label = UILabel()
+        label.text = "Workout Today"
+        label.textColor = .specialLightBrown
+        label.font = .robotoMedium14()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     private let calendarView = CalendarView()
     
     private let weatherView = WeatherView()
-
+    
+    private let tableView = MainTableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,7 +80,10 @@ class MainViewController: UIViewController {
         view.addSubview(userNameLabel)
         view.addSubview(weatherView)
         view.addSubview(addWorkoutButton)
-      
+        view.addSubview(workoutTodayLabel)
+        view.addSubview(tableView)
+     
+        
     }
     
     @objc private func addWorkoutButtonTapped() {
@@ -103,8 +117,16 @@ extension MainViewController {
             weatherView.topAnchor.constraint(equalTo: calendarView.bottomAnchor, constant: 5),
             weatherView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 95),
            weatherView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-            weatherView.heightAnchor.constraint(equalToConstant: 80)
-           
+            weatherView.heightAnchor.constraint(equalToConstant: 80),
+            
+            workoutTodayLabel.topAnchor.constraint(equalTo: addWorkoutButton.bottomAnchor, constant: 10),
+            workoutTodayLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            
+            tableView.topAnchor.constraint(equalTo: workoutTodayLabel.bottomAnchor, constant: 0),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
+            
         ])
     }
 }
