@@ -57,12 +57,9 @@ class StatisticTableViewCell: UITableViewCell {
         
         addSubview(differenceLabel)
         addSubview(nameLabel)
-//        beforeLabel.backgroundColor = .red
-//        nowLabel.backgroundColor = .red
         stackView = UIStackView(arrangedSubviews: [beforeLabel, nowLabel],
                                 spacing: 10)
-//        stackView.alignment = .leading
-//        stackView.backgroundColor = .blue
+
         addSubview(stackView)
         addSubview(lineView)
     }
@@ -70,8 +67,6 @@ class StatisticTableViewCell: UITableViewCell {
     private func setConstraints() {
         
         NSLayoutConstraint.activate([
-            
-//            beforeLabel.widthAnchor.constraint(equalToConstant: 70),
             
             differenceLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
             differenceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
@@ -83,7 +78,6 @@ class StatisticTableViewCell: UITableViewCell {
             
             stackView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 0),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-//            stackView.trailingAnchor.constraint(equalTo: differenceLabel.leadingAnchor, constant: -10),
             
             lineView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
             lineView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
@@ -92,6 +86,5 @@ class StatisticTableViewCell: UITableViewCell {
         ])
     }
 }
-
 
 
