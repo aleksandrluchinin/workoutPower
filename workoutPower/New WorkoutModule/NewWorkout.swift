@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class NewWorkoutViewController: UIViewController {
     
     private let newWorkoutLabel = UILabel(text: "NEW WORKOUT")

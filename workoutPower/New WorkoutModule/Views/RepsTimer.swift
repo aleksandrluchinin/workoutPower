@@ -43,6 +43,8 @@ class RepsofTimer: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         repeatOrTimerLabel.textAlignment = .center
         
+        timerView.isTimer = true
+        
         addSubview(repsTimer)
         addSubview(backView)
         

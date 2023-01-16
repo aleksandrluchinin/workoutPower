@@ -14,6 +14,8 @@ class SliderView: UIView {
     private lazy var slider = GreenSlider(minValue: 0, maxValue: 10)
     private var stackView = UIStackView()
     
+    public var isTimer = false
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -47,7 +49,8 @@ class SliderView: UIView {
     }
     
     @objc private func sliderChanded() {
-        print(slider.value)
+        let intValueSlider = Int(slider.value)
+        numberlabel.text = isTimer ? intValueSlider.getTimeFromSeconds() : "\(intValueSlider)"
     }
     
     private func setConstraints() {
