@@ -66,6 +66,13 @@ class DateAndRepeatView: UIView {
         backView.addSubview(repeatStackView)
     }
     
+    public func getDataAndRepeat() -> (date: Date, repeat: Bool) {
+        (datePicker.date, repeatSwitch.isOn)
+    }
+}
+    
+extension DateAndRepeatView {
+    
     private func setConstraints() {
         
         NSLayoutConstraint.activate([
@@ -77,14 +84,15 @@ class DateAndRepeatView: UIView {
             backView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             backView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
             backView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
-  
+            
             dateStackView.topAnchor.constraint(equalTo: backView.topAnchor, constant: 10),
             dateStackView.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: 15),
             dateStackView.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: -15),
-
+            
             repeatStackView.topAnchor.constraint(equalTo: dateStackView.bottomAnchor, constant: 10),
             repeatStackView.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: 15),
             repeatStackView.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: -15)
         ])
     }
+    
 }

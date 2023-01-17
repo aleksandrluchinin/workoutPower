@@ -19,14 +19,15 @@ class RepsofTimer: UIView {
         return view
     }()
     
-    let setsView = SliderView(name: "Sets", minValue: 0, maxValue: 10)
-    let repsView = SliderView(name: "Reps", minValue: 0, maxValue: 40)
-    let timerView = SliderView(name: "Timer", minValue: 0, maxValue: 360)
+   private let setsView = SliderView(name: "Sets", minValue: 0, maxValue: 10)
+   private let repsView = SliderView(name: "Reps", minValue: 0, maxValue: 40)
+   private let timerView = SliderView(name: "Timer", minValue: 0, maxValue: 360)
     
     private let repeatOrTimerLabel = UILabel(text: "Choose repeat or timer")
 
     private var stackView = UIStackView()
     
+    public var (sets, reps, timer) = (0, 0, 0)
     
     override init(frame: CGRect) {
         super.init(frame: frame)

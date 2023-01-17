@@ -29,6 +29,8 @@ class NewWorkoutViewController: UIViewController {
         
         setupViews()
         setConstraints()
+        addTaps()
+        
     }
     
     private func setupViews() {
@@ -56,10 +58,21 @@ class NewWorkoutViewController: UIViewController {
     @objc private func saveButtonTapped() {
         print("save")
     }
+    
+    private func addTaps() {
+        
+        let tapScreen = UIGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapScreen)
+        let swipeScreen = UISwipeGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        swipeScreen.cancelsTouchesInView = false
+    }
+        @objc private func hideKeyboard() {
+            view.endEditing(true)
+        }
+    
 }
 
 //MARK: - Set Constraints
-
 extension NewWorkoutViewController {
     
     private func setConstraints() {

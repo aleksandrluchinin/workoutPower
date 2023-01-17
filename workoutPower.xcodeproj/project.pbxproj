@@ -15,6 +15,8 @@
 		1F50539429435638005848A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F50539329435638005848A8 /* Assets.xcassets */; };
 		1F50539729435638005848A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50539529435638005848A8 /* LaunchScreen.storyboard */; };
 		1F5053A429437252005848A8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5053A329437252005848A8 /* CalendarView.swift */; };
+		1F9DAB172976D4EC00E2EB3A /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DAB162976D4EC00E2EB3A /* AlertController.swift */; };
+		1F9DAB192976DA1700E2EB3A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DAB182976DA1700E2EB3A /* Date.swift */; };
 		1FACBA39294472A300AF663A /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA38294472A300AF663A /* WeatherView.swift */; };
 		1FACBA402944824F00AF663A /* UIColor .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA3F2944824F00AF663A /* UIColor .swift */; };
 		1FACBA422944829900AF663A /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FACBA412944829900AF663A /* UIFont.swift */; };
@@ -50,6 +52,8 @@
 		1F50539629435638005848A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F50539829435638005848A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5053A329437252005848A8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1F9DAB162976D4EC00E2EB3A /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		1F9DAB182976DA1700E2EB3A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		1FACBA38294472A300AF663A /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		1FACBA3B2944814700AF663A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Обучение приложение workout/Lesson_2/MyFirstApp_03.10./MyFirstApp_03.10./Resources/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		1FACBA3C2944814700AF663A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Обучение приложение workout/Lesson_2/MyFirstApp_03.10./MyFirstApp_03.10./Resources/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 				1FAE5C23296D635000571394 /* Shablon */,
 				1FACBA3E2944822A00AF663A /* UIKit */,
 				1F27470A2975375000F41322 /* Int + Extenshions.swift */,
+				1F9DAB182976DA1700E2EB3A /* Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				1FACBA43294482EA00AF663A /* UIView.swift */,
 				1FACBA452944834200AF663A /* UIStackView.swift */,
 				1FFD40BC29506D470007885C /* UILabel.swift */,
+				1F9DAB162976D4EC00E2EB3A /* AlertController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -381,9 +387,11 @@
 				1FAE5C29296D643500571394 /* GreenButton.swift in Sources */,
 				1FACBA422944829900AF663A /* UIFont.swift in Sources */,
 				1FAE5C54296D95E400571394 /* DateRepiat.swift in Sources */,
+				1F9DAB172976D4EC00E2EB3A /* AlertController.swift in Sources */,
 				1FD8D98B294B1A1A00A6332A /* WorkoutTableViewCell.swift in Sources */,
 				1FFD40C7295078AD0007885C /* MainTabbarController.swift in Sources */,
 				1F50538B29435636005848A8 /* AppDelegate.swift in Sources */,
+				1F9DAB192976DA1700E2EB3A /* Date.swift in Sources */,
 				1F5053A429437252005848A8 /* CalendarView.swift in Sources */,
 				1F50538D29435636005848A8 /* SceneDelegate.swift in Sources */,
 				1FFD40C229506DC40007885C /* StatisticTableViewCell.swift in Sources */,
